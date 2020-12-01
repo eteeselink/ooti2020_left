@@ -36,7 +36,10 @@ namespace Kiosk
 
             answers.Add(1, lst_answ);
             Console.WriteLine(answers);
-
+            if(answer == inputReader.GetCorrectAnswer()) {
+                AnsiConsole.Markup("That's [underline green]correct[/]!");
+            }
+              
 
 
 
