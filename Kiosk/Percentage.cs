@@ -4,24 +4,24 @@ namespace Kiosk {
 
     class Percentage {
 
-        int yesCounter, noCounter = 0;
-        double yesPercentage, noPercentage;
+        // int yesCounter, noCounter = 0;
+        // double yesPercentage, noPercentage;
 
-        input = Text file input
-        choice = input.ToLower();
-        if (choice == "yes")
-        {
-            yesCounter++;
-        }
-        else if (choice == "no")
-        {
-            noCounter++;
-        };
+        // input = Text file input
+        // choice = input.ToLower();
+        // if (choice == "yes")
+        // {
+        //     yesCounter++;
+        // }
+        // else if (choice == "no")
+        // {
+        //     noCounter++;
+        // };
 
-        yesPercentage = yesCounter / (yesCounter + noCounter) * 100;
-        noPercentage = 100 - yesPercentage;
+        // yesPercentage = yesCounter / (yesCounter + noCounter) * 100;
+        // noPercentage = 100 - yesPercentage;
         
-        Console.Write("The percentage of yes is: {0}%", yesPercentage);
+        // Console.Write("The percentage of yes is: {0}%", yesPercentage);
 
         }
 }
