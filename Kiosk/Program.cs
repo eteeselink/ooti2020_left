@@ -12,8 +12,10 @@ namespace Kiosk
     {
         static void Main(string[] args)
         {
-            
-            InputReader inputReader = new InputReader(@"Kiosk/question.json");
+
+            string filePath=AnsiConsole.Ask<string>("Please Enter the file path.");
+    
+            InputReader inputReader = new InputReader(filePath);
             
             //var survey = new Survey();
             //var question = survey.GetQuestion();
@@ -43,6 +45,7 @@ namespace Kiosk
             // else {
             //     AnsiConsole.Markup("That's [underline red]wrong[/]!");
             // }
+
         }
     }
 }
