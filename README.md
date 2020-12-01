@@ -1,5 +1,8 @@
 OOTI2020 - Voting Kiosk
 =======================
+
+[![Join the chat at https://gitter.im/ooti2020_left/community](https://badges.gitter.im/ooti2020_left/community.svg)](https://gitter.im/ooti2020_left/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Please add your username to the right column in this google sheet:
 https://docs.google.com/spreadsheets/d/1aKw_9hFdiramOvbdWDd9PCemSHPSffnn9OzdXB9tU6o/edit?usp=sharing
 
