@@ -1,10 +1,10 @@
-using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
+using System.IO;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Newtonsoft.Json;
+
+using Spectre.Console;
 
 
 namespace Kiosk{
@@ -17,8 +17,8 @@ namespace Kiosk{
             string jsonString = File.ReadAllText(path);
             JsonTextReader reader = new JsonTextReader(new StringReader (jsonString));
 
-            while(reader.read()){
-                reader.TokenType;
+            while(reader.Read()){
+                AnsiConsole.Markup(reader.TokenType.ToString());
                 //populate the content of the file
                 //stil working on it
             }
