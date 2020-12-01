@@ -7,7 +7,7 @@ namespace Kiosk {
         int yesCounter, noCounter = 0;
         double yesPercentage, noPercentage;
 
-        // input = Text file input
+       // input = Text file input
         // choice = input.ToLower();
         // if (choice == "yes")
         // {
