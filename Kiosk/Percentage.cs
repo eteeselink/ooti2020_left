@@ -7,7 +7,7 @@ namespace Kiosk {
         // int yesCounter, noCounter = 0;
         // double yesPercentage, noPercentage;
 
-        // input = Text file input
+       // input = Text file input
         // choice = input.ToLower();
         // if (choice == "yes")
         // {
@@ -22,6 +22,5 @@ namespace Kiosk {
         // noPercentage = 100 - yesPercentage;
         
         // Console.Write("The percentage of yes is: {0}%", yesPercentage);
-
         }
 }

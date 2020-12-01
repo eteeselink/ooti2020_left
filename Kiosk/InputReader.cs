@@ -16,7 +16,7 @@ namespace Kiosk{
             string rawText = System.IO.File.ReadAllText(path);
             //AnsiConsole.Markup(rawText);
             JsonTextReader reader = new JsonTextReader(new StringReader(rawText));
-
+            
             while(reader.Read()){
                 AnsiConsole.Markup("Token: {0}, Value: {1}", reader.TokenType, reader.Value);
                 // populate the content of the file
