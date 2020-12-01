@@ -11,8 +11,7 @@ namespace Kiosk
     {
         static void Main(string[] args)
         {
-            
-           InputReader inputReader = new InputReader(@"question.json");
+            InputReader inputReader = new InputReader(@"Kiosk/question.json");
             
             // var survey = new Survey();
             // var question = survey.GetQuestion();

@@ -14,16 +14,14 @@ namespace Kiosk{
 
         public InputReader(string path){
             string rawText = System.IO.File.ReadAllText(path);
-            string jsonString = File.ReadAllText(path);
+            //AnsiConsole.Markup(rawText);
+            JsonTextReader reader = new JsonTextReader(new StringReader(rawText));
 
-            AnsiConsole.Markup(jsonString);
-            // JsonTextReader reader = new JsonTextReader(new StringReader (jsonString));
-
-            // while(reader.Read()){
-            //     AnsiConsole.Markup(reader.TokenType.ToString());
-                //populate the content of the file
-                //stil working on it
-            // }
+            while(reader.Read()){
+                AnsiConsole.Markup("Token: {0}, Value: {1}", reader.TokenType, reader.Value);
+                // populate the content of the file
+                // stil working on it
+            }
     }
 
     public struct MultipleChoiceQuestion {
