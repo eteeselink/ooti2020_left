@@ -1,5 +1,6 @@
 ﻿using Spectre.Console;
 using System.Collections.Generic;
+using System;
 
 namespace Kiosk
 {
@@ -12,7 +13,7 @@ namespace Kiosk
     {
         static void Main(string[] args)
         {
-
+            Dictionary<int, List<string>> answers = new Dictionary<int, List<string>>();
             string filePath=AnsiConsole.Ask<string>("Please Enter the file path.");
     
             InputReader inputReader = new InputReader(filePath);
@@ -28,6 +29,13 @@ namespace Kiosk
                 prompt.AddChoice(a);
             }
             var answer = AnsiConsole.Prompt(prompt);
+
+            List<string> lst_answ = new List<string>();
+            lst_answ.Add(question.Question);
+            lst_answ.Add(answer);
+
+            answers.Add(1, lst_answ);
+            Console.WriteLine(answers);
 
 
 
