@@ -17,7 +17,7 @@ namespace Kiosk.Test
         public void TestThatFails()
         {
             var survey = new Kiosk.Survey();
-            Assert.Contains(survey.GetCorrectAnswer(), "Quattro Formaggi");
+            Assert.Contains("Quattro Formaggi",survey.GetCorrectAnswer());
         }
 
     }
